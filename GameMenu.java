@@ -45,8 +45,8 @@ public class GameMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String username = usernameField.getText();
                 if (!username.isEmpty()) {
-                    cardLayout.show(cards, "Fight"); // Switch to fight panel
                     JOptionPane.showMessageDialog(GameMenu.this, "Starting game for " + username);
+                    cardLayout.show(cards, "Fight"); // Switch to fight panel
                     // Replace this with your game logic to start the fight
                 } else {
                     JOptionPane.showMessageDialog(GameMenu.this, "Please enter a username!");
